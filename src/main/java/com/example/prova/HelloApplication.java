@@ -24,6 +24,9 @@ public class HelloApplication extends Application {
                 System.out.println(rs.getString("nome") + " " + rs.getString("cognome"));
             }
 
+            for(int i = 0; i < 10; i++)
+                System.out.println("Iterazione " + i);
+
             con.close();
         }
         catch(SQLException e){
