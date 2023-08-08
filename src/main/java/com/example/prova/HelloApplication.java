@@ -24,6 +24,8 @@ public class HelloApplication extends Application {
                 System.out.println(rs.getString("nome") + " " + rs.getString("cognome"));
             }
 
+            System.out.println("Chiusura connessione col DB");
+
             con.close();
         }
         catch(SQLException e){
