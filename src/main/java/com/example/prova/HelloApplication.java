@@ -24,7 +24,6 @@ public class HelloApplication extends Application {
                 System.out.println(rs.getString("nome") + " " + rs.getString("cognome"));
             }
 
-            System.out.println("Chiusura connessione col DB");
 
             con.close();
         }
@@ -32,7 +31,6 @@ public class HelloApplication extends Application {
            System.out.println("Errore nella connessione al DB");
         }
 
-        System.out.println("Bla bla bla");
 
 
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
