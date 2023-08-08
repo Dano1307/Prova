@@ -32,6 +32,9 @@ public class HelloApplication extends Application {
            System.out.println("Errore nella connessione al DB");
         }
 
+        System.out.println("Bla bla bla");
+
+
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         stage.setTitle("Hello!");
